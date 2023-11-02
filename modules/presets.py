@@ -51,6 +51,7 @@ CHUANHU_DESCRIPTION = i18n("由Bilibili [土川虎虎虎](https://space.bilibili
 
 
 ONLINE_MODELS = [
+    "ZpGpt-智品专用gpt-4",
     "gpt-3.5-turbo",
     "gpt-3.5-turbo-instruct",
     "gpt-3.5-turbo-16k",

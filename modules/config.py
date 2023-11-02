@@ -131,6 +131,10 @@ os.environ["SPARK_API_SECRET"] = spark_api_secret
 claude_api_secret = config.get("claude_api_secret", "")
 os.environ["CLAUDE_API_SECRET"] = claude_api_secret
 
+zpgpt_api_secret = config.get("zpgpt_api_secret", "")
+os.environ["ZPGPT_API_SECRET"] = zpgpt_api_secret
+
+
 load_config_to_environ(["openai_api_type", "azure_openai_api_key", "azure_openai_api_base_url",
                        "azure_openai_api_version", "azure_deployment_name", "azure_embedding_deployment_name", "azure_embedding_model_name"])
 

@@ -147,12 +147,15 @@ class ModelType(Enum):
     OpenAIInstruct = 13
     Claude = 14
     Qwen = 15
+    ZpGpt = 90
 
     @classmethod
     def get_type(cls, model_name: str):
         model_type = None
         model_name_lower = model_name.lower()
-        if "gpt" in model_name_lower:
+        if "zpgpt" in model_name_lower:
+            model_type = ModelType.ZpGpt
+        elif "gpt" in model_name_lower:
             if "instruct" in model_name_lower:
                 model_type = ModelType.OpenAIInstruct
             else:
